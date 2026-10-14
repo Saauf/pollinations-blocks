@@ -32,7 +32,7 @@ No Android phone or emulator was available. Before submitting a claim that the e
 1. Install each editor's APK and launch it. Confirm all controls and the extension initialize.
 2. Load the text catalog while signed out. Try Ask while signed out and confirm an actionable error.
 3. Start sign-in and cancel it. Confirm the code stops polling and no late callback changes the app state.
-4. Approve a new device session manually with an explicit expiry, permitted models, Quest-Pollen-only budget and no Paid Pollen. Do not reuse the previous expired CLI authorization.
+4. Approve a device session manually after reviewing its expiry, permitted models and Pollen budget. Confirm that these match the intended test before allowing access.
 5. Verify successful sign-in, persistence after restarting the app, then SignOut. Confirm stale requests cannot deliver results after signing out or switching users.
 6. Grant and deny microphone permission. Record and stop a short M4A clip; confirm its MIME type and transcription behavior with a permitted model.
 7. Test a picked image with a vision model, generated image display and speech playback under a separately approved generation budget. Record actual model IDs and any provider restrictions.
